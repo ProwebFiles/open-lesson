@@ -99,7 +99,7 @@ function startTimer(a, b) {
 }
 document.onkeydown = function (a) {
   ;('ArrowRight' === a.key || ' ' === a.key || 'PageDown' === a.key) &&
-    ((counter += 1), 13 <= counter && (counter = 13)),
+    ((counter += 1), 15 <= counter && (counter = 15)),
     ('ArrowLeft' === a.key || 'PageUp' === a.key) &&
       ((counter -= 1), 1 >= counter && (counter = 1)),
     1 == counter &&
@@ -152,10 +152,11 @@ document.onkeydown = function (a) {
     13 == counter &&
       (employment.classList.remove('active'),
       questions.classList.remove('active'),
-      target.classList.add('active'),
-      clearInterval(interval)),
+      target.classList.add('active')),
     14 == counter &&
-      (target.classList.remove('active'), questions.classList.add('active')),
+      (questions.classList.add('active'),
+      target.classList.remove('active'),
+      clearInterval(interval)),
     15 == counter &&
       ((countTime.innerHTML = '10:00'),
       setTimeout(function () {

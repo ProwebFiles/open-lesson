@@ -1296,9 +1296,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; */
   margin-bottom: 50px;
   /* -webkit-transform: translateY(-100vh); */
   /* -ms-transform: translateY(-100vh); */
