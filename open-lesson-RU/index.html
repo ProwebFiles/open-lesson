@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROWEB Открытый Урок</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <svg style="display: none;">
+        <symbol id="coworking" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="62.5" cy="62.5" r="62.5" fill="#6172FF" />
+            <path
+                d="M71.0267 88.4979C71.0267 93.6635 79.1934 95.8333 79.1934 95.8333H46.2559C46.2559 95.8333 54.4225 93.6635 54.4225 88.4979V83.3594H70.8579L71.0267 88.4979Z"
+                fill="#D0CFCE" />
+            <path
+                d="M90.8259 83.3333H34.6155C33.2136 83.3331 31.8693 82.776 30.8781 81.7846C29.8869 80.7932 29.3301 79.4488 29.3301 78.0469V41.701C29.3301 40.2992 29.8869 38.9547 30.8781 37.9633C31.8693 36.972 33.2136 36.4149 34.6155 36.4146H90.8259C92.228 36.4146 93.5726 36.9716 94.564 37.963C95.5554 38.9544 96.1124 40.299 96.1124 41.701V78.0469C96.1124 79.4489 95.5554 80.7936 94.564 81.785C93.5726 82.7764 92.228 83.3333 90.8259 83.3333Z"
+                fill="#9B9B9A" />
+            <path
+                d="M95.3596 73.6677L29.3867 50.2094V40.3573C29.3867 39.9117 29.4936 39.4726 29.6986 39.077C29.9035 38.6813 30.2005 38.3407 30.5646 38.0838C30.9286 37.8268 31.349 37.6611 31.7905 37.6004C32.2319 37.5398 32.6815 37.5861 33.1013 37.7354L95.3596 59.875V73.6688V73.6677Z"
+                fill="white" />
+            <path
+                d="M96.1124 74.5448C96.1124 74.5448 96.2874 79.6021 94.4978 81.6594C92.7082 83.7167 93.7457 83.3302 90.8259 83.3302H34.6155C31.6967 83.3302 30.278 81.4011 30.278 80.7844L29.3301 74.5448"
+                fill="#D0CFCE" />
+            <path
+                d="M90.8259 83.3333H34.6155C33.2136 83.3331 31.8693 82.776 30.8781 81.7846C29.8869 80.7932 29.3301 79.4488 29.3301 78.0469V41.701C29.3301 40.2992 29.8869 38.9547 30.8781 37.9633C31.8693 36.972 33.2136 36.4149 34.6155 36.4146H90.8259C92.228 36.4146 93.5726 36.9716 94.564 37.963C95.5554 38.9544 96.1124 40.299 96.1124 41.701V78.0469C96.1124 79.4489 95.5554 80.7936 94.564 81.785C93.5726 82.7764 92.228 83.3333 90.8259 83.3333V83.3333Z"
+                stroke="black" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M96.1124 74.5448C96.1124 74.5448 96.2874 79.6021 94.4978 81.6594C92.7082 83.7167 93.7457 83.3302 90.8259 83.3302H34.6155C31.6967 83.3302 30.278 81.4011 30.278 80.7844L29.3301 74.5448"
+                stroke="black" stroke-width="0.22975" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M90.8259 83.3333H34.6155C33.2136 83.3331 31.8693 82.776 30.8781 81.7846C29.8869 80.7932 29.3301 79.4488 29.3301 78.0469V41.701C29.3301 40.2992 29.8869 38.9547 30.8781 37.9633C31.8693 36.972 33.2136 36.4149 34.6155 36.4146H90.8259C92.228 36.4146 93.5726 36.9716 94.564 37.963C95.5554 38.9544 96.1124 40.299 96.1124 41.701V78.0469C96.1124 79.4489 95.5554 80.7936 94.564 81.785C93.5726 82.7764 92.228 83.3333 90.8259 83.3333V83.3333Z"
+                stroke="black" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M32.5117 75.5125H92.9284" stroke="black" stroke-width="0.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M69.9792 88.4979C69.9792 93.6636 79.1875 95.8333 79.1875 95.8333H46.25C46.25 95.8333 55.4583 93.6636 55.4583 88.4979"
+                stroke="black" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="home" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="62.5" cy="62.5" r="62.5" fill="#4B58F8" />
+            <path d="M90.625 85.9375H34.375V60.9375L62.5 34.375L90.625 60.9375V85.9375Z" fill="#E8EAF6" />
+            <path d="M85.9375 57.8125L78.125 50V39.0625H85.9375V57.8125Z" fill="#C5CAE9" />
+            <path d="M34.375 85.9375H90.625V93.75H34.375V85.9375Z" fill="#C5CAE9" />
+            <path d="M62.5 31.7188L31.25 60.7812L34.375 64.2187L62.5 38.125L90.625 64.2187L93.75 60.7812L62.5 31.7188Z"
+                fill="#B71C1C" />
+            <path d="M53.125 68.75H71.875V93.75H53.125V68.75Z" fill="#D84315" />
+            <path d="M57.8125 51.5625H67.1875V60.9375H57.8125V51.5625Z" fill="#01579B" />
+            <path
+                d="M67.9688 80.4688C67.5 80.4688 67.1875 80.7812 67.1875 81.25V84.375C67.1875 84.8438 67.5 85.1562 67.9688 85.1562C68.4375 85.1562 68.75 84.8438 68.75 84.375V81.25C68.75 80.7812 68.4375 80.4688 67.9688 80.4688Z"
+                fill="#FF8A65" />
+        </symbol>
+        <symbol id="sertifikat" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="62.5" cy="62.5" r="62.5" fill="#09CF83" />
+            <g clip-path="url(#clip0)">
+                <path
+                    d="M99.2371 29.6423C98.758 29.1511 98.0999 28.8757 97.4138 28.8793H27.5862C26.9001 28.8757 26.242 29.1511 25.763 29.6423C25.2718 30.1213 24.9964 30.7794 25 31.4655V85.7759C24.9964 86.462 25.2718 87.1201 25.763 87.5992C26.242 88.0904 26.9001 88.3658 27.5862 88.3621H96.1207C98.2632 88.3621 100 86.6253 100 84.4828V31.4655C100.004 30.7794 99.7283 30.1213 99.2371 29.6423Z"
+                    fill="#F3D55B" />
+                <path
+                    d="M100.001 31.4655V84.4827C100.001 85.5115 99.5913 86.4979 98.8627 87.2241L93.5352 81.8965V35.3448L99.2377 29.6422C99.7289 30.1213 100.004 30.7794 100.001 31.4655Z"
+                    fill="#F0C419" />
+                <path
+                    d="M31.4656 35.3448V81.8965L25.763 87.5991C25.2718 87.1201 24.9964 86.462 25 85.7759V31.4655C24.9964 30.7794 25.2718 30.1213 25.763 29.6422L31.4656 35.3448Z"
+                    fill="#F0C419" />
+                <path
+                    d="M98.8628 87.2241C98.1366 87.9527 97.1501 88.3621 96.1214 88.3621H27.5869C26.9008 88.3657 26.2427 88.0903 25.7637 87.5991L31.4663 81.8965H93.5352L98.8628 87.2241Z"
+                    fill="#F29C1F" />
+                <path d="M31.4648 35.3448H93.5338V81.8965H31.4648V35.3448Z" fill="#ECF0F1" />
+                <path d="M93.5338 35.3448C93.5338 35.3448 31.4648 35.3448 31.4648 81.8965V35.3448H93.5338Z"
+                    fill="white" />
+                <path
+                    d="M71.5528 44.3965H53.4494C52.7352 44.3965 52.1562 43.8176 52.1562 43.1034C52.1562 42.3893 52.7352 41.8103 53.4494 41.8103H71.5528C72.267 41.8103 72.8459 42.3893 72.8459 43.1034C72.8459 43.8176 72.267 44.3965 71.5528 44.3965Z"
+                    fill="#BDC3C7" />
+                <path
+                    d="M58.6212 72.8448H40.5177C39.8036 72.8448 39.2246 72.2659 39.2246 71.5517C39.2246 70.8376 39.8036 70.2586 40.5177 70.2586H58.6212C59.3353 70.2586 59.9143 70.8376 59.9143 71.5517C59.9143 72.2659 59.3353 72.8448 58.6212 72.8448Z"
+                    fill="#95A5A5" />
+                <path
+                    d="M75.4325 50.8621H49.5704C48.8563 50.8621 48.2773 50.2831 48.2773 49.569C48.2773 48.8548 48.8563 48.2758 49.5704 48.2758H75.4325C76.1467 48.2758 76.7256 48.8548 76.7256 49.569C76.7256 50.2831 76.1467 50.8621 75.4325 50.8621Z"
+                    fill="#BDC3C7" />
+                <path
+                    d="M70.2578 77.2414L70.2578 94.0259C70.2547 94.4764 70.4862 94.896 70.869 95.1336C71.2517 95.3712 71.7305 95.3924 72.1328 95.1897L75.4949 93.4957C75.8617 93.3147 76.2919 93.3147 76.6587 93.4957L80.0208 95.1897C80.4231 95.3924 80.9019 95.3712 81.2846 95.1336C81.6674 94.896 81.8989 94.4764 81.8958 94.0259L81.8958 77.2414H70.2578Z"
+                    fill="#FF5364" />
+                <path
+                    d="M58.6212 67.6724C55.4548 67.6725 52.342 66.8556 49.5837 65.3009C46.8207 66.8696 43.695 67.6873 40.5177 67.6724C39.8036 67.6724 39.2246 67.0935 39.2246 66.3793C39.2246 65.6651 39.8036 65.0862 40.5177 65.0862C42.8355 65.0965 45.1267 64.5926 47.2263 63.6108C45.8842 62.5819 45.0258 61.0452 44.8535 59.3629C44.8535 58.5871 45.1936 56.0345 49.5694 56.0345C53.9453 56.0345 54.2854 58.5819 54.2854 59.3629C54.1139 61.0473 53.2561 62.5866 51.9138 63.6185C54.0142 64.5959 56.3046 65.097 58.6212 65.0862C59.3353 65.0862 59.9143 65.6651 59.9143 66.3793C59.9143 67.0935 59.3353 67.6724 58.6212 67.6724ZM49.5694 58.6207C48.5867 58.6207 47.4397 58.8147 47.4397 59.3629C47.4397 59.9112 48.0203 61.0155 49.5591 62.2C50.935 61.1474 51.6992 60.047 51.6992 59.3629C51.6992 58.8147 50.5522 58.6207 49.5694 58.6207Z"
+                    fill="#95A5A5" />
+                <path
+                    d="M88.3619 68.319C88.3619 69.8099 85.5779 70.7345 85.04 72.0315C84.4826 73.375 85.7757 75.9935 84.7632 77.006C83.7507 78.0185 81.1322 76.7254 79.79 77.2815C78.493 77.8194 77.5684 80.6035 76.0775 80.6035C74.5865 80.6035 73.6619 77.8194 72.365 77.2815C71.0214 76.7241 68.4029 78.0172 67.3904 77.0047C66.3779 75.9922 67.671 73.3737 67.115 72.0315C66.577 70.7345 63.793 69.8099 63.793 68.319C63.793 66.828 66.577 65.9035 67.115 64.6065C67.6723 63.2629 66.3792 60.6444 67.3917 59.6319C68.4042 58.6194 71.0227 59.9125 72.365 59.3565C73.6581 58.8185 74.5865 56.0345 76.0775 56.0345C77.5684 56.0345 78.493 58.8185 79.79 59.3565C81.1335 59.9138 83.752 58.6207 84.7645 59.6332C85.777 60.6457 84.4839 63.2642 85.04 64.6065C85.5779 65.9035 88.3619 66.828 88.3619 68.319Z"
+                    fill="#FB7B76" />
+                <path
+                    d="M76.0786 72.8448C78.5782 72.8448 80.6045 70.8185 80.6045 68.319C80.6045 65.8194 78.5782 63.7931 76.0786 63.7931C73.579 63.7931 71.5527 65.8194 71.5527 68.319C71.5527 70.8185 73.579 72.8448 76.0786 72.8448Z"
+                    fill="#DF4D60" />
+            </g>
+            <defs>
+                <clipPath id="clip0">
+                    <rect width="75" height="75" fill="white" transform="translate(25 25)" />
+                </clipPath>
+            </defs>
+        </symbol>
+        <symbol id="telegram" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="62.5" cy="62.5" r="62.5" fill="#00A3FF" />
+            <path
+                d="M96.8184 34.3204L85.4592 94.7796C85.4592 94.7796 83.8709 98.9725 79.5022 96.96L53.2902 75.7448L43.759 70.8816L27.7142 65.1791C27.7142 65.1791 25.2519 64.257 25.0134 62.2445C24.7749 60.232 27.7937 59.1421 27.7937 59.1421L91.5753 32.728C91.5753 32.728 96.8179 30.2963 96.8179 34.3214"
+                fill="white" />
+            <path
+                d="M51.2847 94.0999C51.2847 94.0999 50.5196 94.0244 49.5656 90.8375C48.6132 87.6511 43.7676 70.8805 43.7676 70.8805L82.2911 45.0539C82.2911 45.0539 84.5154 43.6283 84.4359 45.0539C84.4359 45.0539 84.8329 45.3056 83.641 46.4795C82.4501 47.6539 53.3788 75.2413 53.3788 75.2413"
+                fill="#D2E5F1" />
+            <path d="M63.3498 83.8782L52.9823 93.8575C52.9823 93.8575 52.1715 94.5068 51.2852 94.0998L53.2705 75.5638"
+                fill="#B5CFE4" />
+        </symbol>
+        <symbol id="video" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="62.5" cy="62.5" r="62.5" fill="#01F495" />
+            <g clip-path="url(#clip0)">
+                <path
+                    d="M99.8336 44.1238C99.8336 48.2137 95.9617 51.5242 91.1863 51.5242H72.782C68.002 51.5242 64.1289 48.2137 64.1289 44.1238C64.1289 40.0352 68.002 36.7188 72.782 36.7188H91.1863C95.9629 36.7188 99.8336 40.0352 99.8336 44.1238Z"
+                    fill="#A7A8AC" />
+                <path
+                    d="M87.3207 43.3703C83.3457 43.3656 76.6109 43.9211 73.1762 41.2773C71.3469 39.8652 70.3461 38.4883 69.9336 37.1641C66.5574 38.1695 64.1211 40.8918 64.1211 44.125C64.1211 48.2148 67.9941 51.5254 72.7742 51.5254H91.1785C95.9539 51.5254 99.8258 48.2148 99.8258 44.125C99.8258 43.7523 99.7625 43.3996 99.7016 43.0422C95.5918 43.3316 91.475 43.3703 87.316 43.3703"
+                    fill="#929497" />
+                <path
+                    d="M93.109 48.4727H36.9117C36.4453 48.4727 36.0586 48.7434 36.0586 49.0727V87.5934C36.0586 87.9168 36.4453 88.1875 36.9117 88.1875H93.1078C93.3598 88.1875 93.5531 88.1242 93.6891 88.0281C93.6891 88.0281 93.6973 88.0176 93.7078 88.0129L93.7324 87.9883C93.8005 87.9467 93.857 87.8886 93.8965 87.8193C93.9361 87.7501 93.9574 87.6719 93.9586 87.5922V63.0895V49.0715C93.9586 48.7434 93.5719 48.4727 93.1078 48.4727"
+                    fill="#A7A8AC" />
+                <path
+                    d="M90.8047 50.534H39.7191C39.2961 50.534 38.9434 50.7754 38.9434 51.066V85.218C38.9434 85.5016 39.2961 85.7441 39.7191 85.7441H90.8047C91.032 85.7441 91.2113 85.6902 91.3273 85.6047C91.3273 85.6047 91.3414 85.5894 91.3461 85.5894C91.3555 85.5894 91.366 85.5754 91.3707 85.5695C91.4327 85.5335 91.4845 85.4821 91.521 85.4204C91.5575 85.3586 91.5776 85.2885 91.5793 85.2168V63.4926V51.0648C91.5793 50.7754 91.2219 50.534 90.8047 50.534Z"
+                    fill="#E7E6E6" />
+                <path
+                    d="M51.1711 48.4609H29.4152C28.0505 48.4671 26.7045 48.7794 25.4766 49.375V61.8426C26.6484 62.4027 27.9809 62.7555 29.4152 62.7555H51.1711C55.7027 62.7555 59.3742 59.5551 59.3742 55.6059C59.3742 51.6613 55.6992 48.4609 51.1711 48.4609Z"
+                    fill="#E7E6E6" />
+                <path
+                    d="M80.0121 62.9617H43.8316C43.5316 62.9617 43.2832 63.1258 43.2832 63.325V86.4109C43.2832 86.6043 43.5316 86.7695 43.8316 86.7695H80.0227C80.154 86.775 80.2841 86.7416 80.3965 86.6734L80.407 86.6641L80.4246 86.6488C80.5102 86.5937 80.5711 86.5129 80.5711 86.4109V71.7262V63.325C80.5711 63.1258 80.3203 62.9617 80.0227 62.9617"
+                    fill="#A7A8AC" />
+                <path
+                    d="M77.2773 64.4066H46.559C46.3059 64.4066 46.0938 64.552 46.0938 64.7207V84.9262C46.0938 85.0961 46.3059 85.2356 46.559 85.2356H77.2867C77.3983 85.2401 77.5088 85.2115 77.6043 85.1535L77.6148 85.1441C77.6148 85.1441 77.6242 85.1395 77.6289 85.1336C77.7016 85.0855 77.7555 85.0141 77.7555 84.9262V72.0731V64.7207C77.7555 64.552 77.5387 64.4066 77.2867 64.4066"
+                    fill="#243438" />
+                <path
+                    d="M56.368 69.1644H50.5402C50.4922 69.1644 50.4512 69.2559 50.4512 69.3672V82.5391C50.4512 82.6516 50.4922 82.743 50.5402 82.743H56.368C56.3938 82.743 56.4137 82.723 56.4277 82.6902C56.4277 82.6902 56.4301 82.6902 56.4301 82.6844L56.4324 82.675C56.4508 82.6321 56.4592 82.5856 56.457 82.5391V74.1625V69.3672C56.457 69.2559 56.416 69.1644 56.368 69.1644Z"
+                    fill="#E7E6E6" />
+                <path
+                    d="M72.2606 70.2941H66.4328C66.3836 70.2941 66.3438 70.3469 66.3438 70.4055V77.3758C66.3438 77.4344 66.3836 77.4824 66.4328 77.4824H72.2606C72.2863 77.4824 72.3074 77.473 72.3215 77.4543H72.3238L72.3262 77.4484C72.3414 77.4344 72.3508 77.4063 72.3508 77.3758V72.9437V70.4055C72.3508 70.348 72.3098 70.2941 72.2606 70.2941Z"
+                    fill="#E7E6E6" />
+                <path
+                    d="M81.8566 45.8547H73.6324C73.5645 45.8547 73.5059 45.9133 73.5059 45.9707V53.4777C73.5059 53.541 73.5656 53.5938 73.6324 53.5938H81.8566C81.8725 53.5943 81.8882 53.5916 81.903 53.5857C81.9177 53.5799 81.931 53.571 81.9422 53.5598H81.9469L81.9492 53.5551C81.96 53.5453 81.9685 53.5333 81.9744 53.52C81.9802 53.5067 81.9832 53.4923 81.9832 53.4777V48.707V45.9707C81.9832 45.9133 81.9246 45.8547 81.8566 45.8547Z"
+                    fill="#BB253F" />
+                <path
+                    d="M80.8367 44.9219H72.6125C72.5457 44.9219 72.4883 44.9793 72.4883 45.0391V52.5461C72.4883 52.6082 72.5469 52.6621 72.6125 52.6621H80.8379C80.8535 52.6624 80.869 52.6595 80.8835 52.6536C80.898 52.6478 80.9112 52.6391 80.9223 52.6281H80.927L80.9293 52.6234C80.94 52.6136 80.9485 52.6016 80.9544 52.5883C80.9602 52.575 80.9633 52.5606 80.9633 52.5461V47.7742V45.0391C80.9633 44.9793 80.9047 44.9219 80.8367 44.9219Z"
+                    fill="#DF2C43" />
+                <path
+                    d="M29.4356 67.1476V53.8797V45.4398C29.4356 45.2652 29.4039 45.1105 29.3676 45.1105H25.0668C25.0317 45.1105 25 45.2641 25 45.4387V67.1476C24.9996 67.2271 25.007 67.3064 25.0223 67.3844C25.0317 67.4336 25.0481 67.4758 25.0656 67.4758H29.3676C29.4039 67.4758 29.4356 67.3223 29.4356 67.1476Z"
+                    fill="#243438" />
+            </g>
+            <defs>
+                <clipPath id="clip0">
+                    <rect width="75" height="75" fill="white" transform="translate(25 25)" />
+                </clipPath>
+            </defs>
+        </symbol>
+    </svg>
+    <section class="web-programming active">
+        <div class="web-programming__inner">
+            <h3 class="web-programming__inner-suptitle">Веб-Программирование</h3>
+            <p class="web-programming__inner-span">Открытый Урок</p>
+            <h1 class="web-programming__inner-title">PROWEB</h1>
+        </div>
+        <div class="web-programming__long-line"></div>
+        <div class="web-programming__blue-bg-circle"></div>
+        <div class="web-programming__green-circle"></div>
+        <div class="web-programming__blue-circle"></div>
+        <div class="web-programming__white-bg-circle"></div>
+        <div class="web-programming__purple-half-circle">
+            <div class="web-programming__purple-half-circle-inner"></div>
+        </div><img class="web-programming__pattern" src="./img/pattern.webp" alt="pattern">
+    </section>
+    <section class="why-need">
+        <div class="why-need__inner"><img class="why-need__img" src="./img/why-need-img.webp" alt="">
+            <div class="why-need__title">Для чего нужно WEB программирование?</div><img class="why-need__triangle"
+                src="./img/why-need-triangle.webp" alt="">
+            <div class="why-need__green-circle"></div>
+            <div class="why-need__thin-blue-circle"></div>
+        </div>
+    </section>
+    <section class="salary">
+        <div class="salary__inner">
+            <div class="default-header salary__header">
+                <h3 class="default-suptitle">Средняя зарплата</h3>
+                <h1 class="default-title salary__title">От 300$ до 2000$ и выше</h1>
+            </div>
+            <div class="salary__content">
+                <div class="salary__content-line"><span>01.</span>
+                    <p class="default-text">Профессия будущего</p>
+                </div>
+                <div class="salary__content-line"><span>02.</span>
+                    <p class="default-text">Нехватка специалистов</p>
+                </div>
+                <div class="salary__content-line"><span>03.</span>
+                    <p class="default-text">Спрос на рынке труда</p>
+                </div>
+            </div>
+        </div><img class="salary__patern" src="./img/pattern.webp" alt="">
+    </section>
+    <section class="freelance">
+        <div class="freelance__inner">
+            <div class="freelance__left">
+                <div class="default-header">
+                    <h3 class="default-suptitle">Как начать работать?</h3>
+                    <h1 class="default-title">01. Фриланс</h1>
+                </div>
+            </div>
+            <div class="freelance__right">
+                <div class="freelance__right-content">
+                    <div class="default-line"><span class="freelance__right-count">01.</span>
+                        <p class="default-text">Свободный график</p>
+                    </div>
+                    <div class="default-line"><span class="freelance__right-count">02.</span>
+                        <p class="default-text">Возможность выбирать заказчиков</p>
+                    </div>
+                    <div class="default-line"><span class="freelance__right-count">03.</span>
+                        <p class="default-text">Финансовая независимость</p>
+                    </div>
+                    <div class="default-line"><span class="freelance__right-count">04.</span>
+                        <p class="default-text">Нет корпоративных стандартов</p>
+                    </div>
+                    <div class="default-line"><span class="freelance__right-count">05.</span>
+                        <p class="default-text">Возможность жить и работать в любой точке мира</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="freelance2">
+        <div class="freelance2__inner">
+            <div class="freelance2__left office__left">
+                <div class="default-header">
+                    <h3 class="default-suptitle">Как начать работать?</h3>
+                    <h1 class="default-title">02. Офис</h1>
+                </div>
+            </div>
+            <div class="freelance2__right office__right">
+                <div class="freelance2__right-content">
+                    <div class="default-line"><span class="freelance2__right-count">01.</span>
+                        <p class="default-text">Стабильность</p>
+                    </div>
+                    <div class="default-line"><span class="freelance2__right-count">02.</span>
+                        <p class="default-text">Опыт</p>
+                    </div>
+                    <div class="default-line"><span class="freelance2__right-count">03.</span>
+                        <p class="default-text">Отпуск, больничный, пенсия</p>
+                    </div>
+                    <div class="default-line"><span class="freelance2__right-count">04.</span>
+                        <p class="default-text">Наставник</p>
+                    </div>
+                    <div class="default-line"><span class="freelance2__right-count">05.</span>
+                        <p class="default-text">Социальная жизнь</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="web-parts-view">
+        <div class="web-parts-view__inner">
+            <div class="web-parts-view__content">
+                <h1 class="web-parts-view__frontend">Frontend</h1>
+                <h1 class="web-parts-view__backend">Backend</h1>
+            </div>
+        </div>
+    </section>
+    <section class="web-parts">
+        <div class="web-parts__inner">
+            <div class="default-header web-parts__header">
+                <div class="web-parts__header-left">
+                    <h1 class="default-title">Backend</h1>
+                </div>
+                <div class="web-parts__header-right">
+                    <h1 class="default-title">Frontend</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="languages">
+        <div class="languages__green-circle"></div>
+        <div class="languages__purple-circle"></div>
+        <div class="languages__blue-long"></div>
+        <div class="languages__inner">
+            <div class="languages__content">
+                <div class="languages__name"><img src="./img/languages-html.webp" alt="html">
+                    <h6>html</h6>
+                </div>
+                <div class="languages__name"><img src="./img/languages-css.webp" alt="css">
+                    <h6>css</h6>
+                </div>
+                <div class="languages__name"><img src="./img/languages-js.webp" alt="css">
+                    <h6>javascript</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="developing"></section>
+    <section class="web-parts-info">
+        <div class="web-parts-info__inner"><span class="web-parts-info__item">Скелет проекта</span><span
+                class="web-parts-info__item">Краски проекта</span><span class="web-parts-info__item">Работа с
+                дизайном</span><span class="web-parts-info__item">Помощник
+                HTML и CSS</span><span class="web-parts-info__item">Управление
+                версиями</span><span class="web-parts-info__item">Методология
+                названия</span><span class="web-parts-info__item">События в
+                HTML</span><span class="web-parts-info__item">Помощник
+                HTML, CSS, JS</span><span class="web-parts-info__item">Работа с базами
+                данных</span><span class="web-parts-info__item">Мозги проекта</span><span
+                class="web-parts-info__item">Готовое для
+                заказчика </span></div>
+    </section>
+    <section class="advantages">
+        <div class="advantages__inner">
+            <div class="default-header">
+                <h1 class="default-title">PROWEB</h1>
+                <h3 class="default-suptitle">Плюсы нашей школы</h3>
+            </div>
+            <div class="advantages__content">
+                <div class="advantages__content-item"><svg>
+                        <use xlink:href="#home"></use>
+                    </svg><span>Домашняя работа</span></div>
+                <div class="advantages__content-item"><svg>
+                        <use xlink:href="#video"></use>
+                    </svg><span>Видеозапись урока</span></div>
+                <div class="advantages__content-item"><svg>
+                        <use xlink:href="#telegram"></use>
+                    </svg><span>Telegram</span></div>
+                <div class="advantages__content-item"><svg>
+                        <use xlink:href="#coworking"></use>
+                    </svg><span>Коворкинг</span></div>
+                <div class="advantages__content-item"><svg>
+                        <use xlink:href="#sertifikat"></use>
+                    </svg><span>Сертификат</span></div>
+            </div>
+        </div>
+    </section>
+    <section class="employment">
+        <div class="employment__inner">
+            <div class="default-header">
+                <h1 class="default-title">Помощь в трудоустройстве</h1>
+                <h3 class="default-suptitle">Для студентов PROWEB:</h3>
+            </div>
+            <div class="employment__content">
+                <div class="employment__content-item">
+                    <span class="employment__content-item--num">1.</span>
+                    <span class="employment__content-item--text">Урок посвящённый площадкам для поиска работы, алгоритму поиска и самым важным аспектам поиска</span>
+                </div>
+                <div class="employment__content-item">
+                    <span class="employment__content-item--num">2.</span>
+                    <span class="employment__content-item--text">Видеоинструкция, как правельно готовить резюме портфолио, и проходить собеседование</span>
+                </div>
+                <div class="employment__content-item">
+                    <span class="employment__content-item--num">3.</span>
+                    <span class="employment__content-item--text">Для лучших учеников - добавление в канал с актуальными вакансиями</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="target">
+        <div class="target__inner"><img class="target__arrow" src="./img/target-bg-arrow.webp" alt="">
+            <div class="target__green-circle"></div>
+            <div class="target__white-bg-circle"></div>
+            <div class="target__blue-long"></div>
+            <div class="target__purple-circle"></div>
+            <div class="target__blue-circle"></div>
+            <div class="default-header">
+                <h1 class="default-title">PROWEB</h1>
+                <h3 class="default-suptitle">Цель</h3>
+            </div>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="questions__inner">
+            <div class="target__green-circle"></div>
+            <div class="target__white-bg-circle"></div>
+            <div class="questions__black-bg-circle"></div>
+            <div class="questions__purple-big-circle"></div>
+            <div class="target__purple-circle"></div>
+            <div class="questions__black-long"></div>
+            <div class="default-header">
+                <h1 class="default-suptitle">Школа иновационных технологий</h1>
+                <h3 class="default-title">PROWEB</h3>
+            </div>
+            <div class="questions__content"><time class="questions__timer">10:00</time><time
+                    class="questions__timer-sub">00:00:00</time>
+                <div class="questions__content-text">Время вопросов<img class="questions__img"
+                        src="./img/question-icon.webp" alt=""></div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

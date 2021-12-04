@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.lang{
+    display: flex;
+    margin-top: 50px;
+}
+
+.ru,
+.uz{
+    border: 2px solid #fff;
+    padding: 30px;
+    cursor: pointer;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+}
